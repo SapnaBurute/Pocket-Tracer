@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <a href="#sidenav-open">&#9776;</a>
+            <div>Pocket Tracer</div>
+        </div>
+        <ul class="mobile-view">
+          <li><a href="http://">Home</a></li>
+        </ul>
+        <form class="mobile-view">
+            <!-- <input type="search" placeholder="Search" /> -->
+            <a type="button">My Account </a>
+        </form>
+    </nav>
+    <main>
+        <section>
+            <div class="about-header">
+                <button type="button"> Expenses</button>
+                <button type="button">Monthly Expenses</button>
+            </div>
+            <form class="about-form" id="expenseForm">
+                <div>
+                    <input type="text" 
+                    id="expenseDesc" placeholder="Item Name" />
+                </div>
+                <div>
+                    <select id="expenseCat">
+                        <option value="exp-cate">Electronics</option>
+                        <option value="exp-dn">Daily Needs</option>
+                        <option value="exp-gr">Gromming</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="number" id="expensePrice" placeholder="Price" />
+                </div>
+                <div>
+                    <button type="submit"> Add </button>
+                </div>
+            </form>
+            <div class="about-expense-container">
+                <div>
+                    <div>Electronics</div>
+                    <div class="expense-category" id="exp-cate">
+                        
+                    </div>
+                </div>
+                <div>
+                    <div>Daily Needs</div>
+                    <div class="expense-category" id="exp-dn">
+                        
+                    </div>
+                </div>
+                <div>
+                    <div>Gromming</div>
+                    <div class="expense-category" id="exp-gr">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
